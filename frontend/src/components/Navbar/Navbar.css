@@ -1,0 +1,186 @@
+.nav-head{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #fc8934;
+  color: white;
+  padding: 5px 100px;
+}
+
+.nav-head span{
+  font-size: 15px;
+  text-align: center;
+}
+
+.nav-contents{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  background-color: white;
+}
+
+.nav-contents img{
+  width: 100px;
+  cursor: pointer;
+}
+
+.nav-icon{
+  color: #fc8934;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-contents-right{
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper{
+  position: relative;
+}
+
+.tool-tip{
+  position: absolute;
+  background-color: #fc8934;
+  color: white;
+  padding: 3px 7px;
+  font-size: 12px;
+  border-radius: 5px;
+  bottom: -25px;
+  transform: translateX(-20%);
+  display: none;
+}
+
+.wrapper:hover .tool-tip{
+  display: block;
+  animation: slideDown 0.3s;
+}
+
+.nav-opts{
+  padding: 10px 30px;
+  background: #e9e9e9;
+}
+
+.nav-opts ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 10px 40px;
+}
+
+.nav-opts ul li{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-opts ul li::after{
+  content: '';
+  background: black;
+  height: 2px;
+  width: 100%;
+  display: block;
+  visibility: hidden;
+}
+
+.nav-opts ul li:hover::after{
+  visibility: visible;
+  animation: slideRight 0.3s;
+}
+
+.nav-icon-mobile{
+  display: none;
+}
+
+@media (max-width: 550px) {
+
+  .navbar{
+    position: relative;
+  }
+
+  .nav-opts-bg{
+    position: relative;
+  }
+
+  .nav-icon-pc{
+    display: none;
+  }
+
+  .nav-icon-mobile{
+    display: block;
+  }
+
+  .nav{
+    z-index: 99;
+    position: relative;
+    background-color: white;
+    padding-bottom: 15px;
+  }
+
+  .nav-head{
+    padding: 2px 20px;
+  }
+
+  .nav-contents{
+    margin-bottom: 0;
+  }
+
+  .nav-contents img{
+    width: 80px;
+  }
+
+  .mobile-nav-left{
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-opts{
+    position: absolute;
+    top: 40px;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 100px 30px 70px;
+    transition: transform 0.5s ease;
+  }
+
+  .nav-opts ul{
+  flex-direction: column;
+  padding: 10px 40px 0 0;
+  }
+
+  .nav-opts-bg{
+    background-color: #0000004f;
+    inset: 0;
+    position: fixed;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .showBtn{
+    display: block;
+  }
+
+  .hideBtn{
+    display: none;
+  }
+
+  .showSideBar{
+    transform: translateX(0);
+  }
+
+  .hideSideBar{
+    transform: translateX(-100%);
+  }
+
+  .showOverlay{
+    opacity: 1;
+  }
+
+  .hideOverlay{
+    opacity: 0;
+  }
+}

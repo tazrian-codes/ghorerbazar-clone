@@ -1,0 +1,35 @@
+.collection-display{
+  margin: 50px 80px;
+}
+
+.collection-display h2{
+  margin: 0 auto 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+}
+.collection-display-items{
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 180px);
+  gap: 30px;
+}
+
+.display-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.display-item img{
+  width: 200px;
+  border: 1px solid #fc87346b;
+}
+
+.display-item p{
+  font-size: 20px;
+}
