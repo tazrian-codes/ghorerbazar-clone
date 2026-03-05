@@ -1,3 +1,7 @@
+.navbar{
+  position: relative;
+}
+
 .nav-head{
   display: flex;
   justify-content: center;
@@ -73,6 +77,8 @@
 .nav-opts ul li{
   font-size: 20px;
   cursor: pointer;
+  display: inline-flex;
+  position: relative;
 }
 
 .nav-opts ul li::after{
@@ -80,8 +86,10 @@
   background: black;
   height: 2px;
   width: 100%;
-  display: block;
   visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .nav-opts ul li:hover::after{
@@ -93,13 +101,125 @@
   display: none;
 }
 
+.account-section{
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.account-section button:not(:last-child){
+  border: none;
+  padding: 5px;
+  text-align: center;
+  background-color: #fc8934;
+  color: white;
+  border-radius: 5px;
+}
+
+.orange-bordered-btn{
+  border: none;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #fc8934;
+  color: #fc8934;
+  border-radius: 5px;
+}
+
+.account-section p{
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+.search-div-bg{
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.488);
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+}
+
+.search-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.search-head img{
+  width: 130px;
+}
+
+.search-div-main{
+  background-color: white;
+  padding: 20px 10px;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.search-box{
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.search-box .search-icon{
+  position: absolute;
+  transform: translate(-50%, 50%);
+  right: 1px;
+}
+
+.search-box input{
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #bebebe;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.search-head-right{
+  display: flex;
+  gap: 10px;
+}
+
+.popular-search-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.show-search-div-bg{
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-search-div-main{
+  transform: translateY(0);
+}
+
+.search-div-main-mobile{
+  display: none;
+}
+
+.popular-search-opts, .popular-search-opts-mobile{
+  display: flex;
+  gap: 10px;
+}
+
+.popular-search-opts p, .popular-search-opts-mobile p{
+  text-decoration: underline;
+}
+
 @media (max-width: 550px) {
 
   .navbar{
-    position: relative;
-  }
-
-  .nav-opts-bg{
     position: relative;
   }
 
@@ -112,7 +232,7 @@
   }
 
   .nav{
-    z-index: 99;
+    z-index: 100;
     position: relative;
     background-color: white;
     padding-bottom: 15px;
@@ -137,27 +257,38 @@
   }
 
   .nav-opts{
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 70%;
     height: 100vh;
     background-color: white;
     overflow-y: scroll;
-    padding: 100px 30px 70px;
-    transition: transform 0.5s ease;
+    padding: 100px 30px 90px;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
   }
 
   .nav-opts ul{
   flex-direction: column;
-  padding: 10px 40px 0 0;
+  align-items: start;
+  padding: 10px 0 0 0;
+  width: 100%;
+  }
+
+  .nav-opts ul li{
+    font-size: 15px;
   }
 
   .nav-opts-bg{
     background-color: #0000004f;
     inset: 0;
     position: fixed;
-    z-index: 1;
     transition: opacity 0.5s ease;
+  }
+
+  .account-section{
+    display: flex;
   }
 
   .showBtn{
@@ -172,15 +303,72 @@
     transform: translateX(0);
   }
 
-  .hideSideBar{
-    transform: translateX(-100%);
-  }
-
   .showOverlay{
     opacity: 1;
+    visibility: visible;
   }
 
   .hideOverlay{
     opacity: 0;
+    visibility: hidden;
   }
+
+  .search-div-bg{
+    display: none;
+  }
+
+.search-head-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.search-head-mobile .close-icon{
+  font-size: 25px;
+}
+
+.search-div-main-mobile{
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  width: 100%;
+  padding: 20px 30px;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 110;
+}
+
+.search-box-mobile{
+  position: relative;
+  width: 100%;
+}
+
+.search-box-mobile .search-icon{
+  position: absolute;
+  transform: translate(-50%, 80%);
+  right: 1px;
+}
+
+.search-box-mobile input{
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #bebebe;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.popular-search-div-mobile{
+  display: flex;
+  flex-direction: column;
+}
+
+.show-search-div-main-mobile{
+  display: block;
+}
+
 }

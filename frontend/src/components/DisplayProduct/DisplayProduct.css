@@ -3,8 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: -2;
-  position: relative;
 }
 
 .display-product h2{
@@ -59,8 +57,9 @@
   cursor: pointer;
 }
 
-.button-div button:hover{
-  box-shadow: 0 0 0 1px #fc8934;
+.button-div button:hover,
+.button-div button:active {
+  box-shadow: 0 0 0 2px #000000;
 }
 
 @media (max-width: 550px) {
@@ -90,5 +89,5 @@
     font-size: 10px;
     height: 30px;
     width: 120px;
- }
+  }
 }

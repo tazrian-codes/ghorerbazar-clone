@@ -1,5 +1,9 @@
 import React from 'react'
 import './Footer.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -23,18 +27,29 @@ const Footer = () => {
         </div>
         <div className="footer-first-right">
           <div className="footer-first-right-one">
-            <h3 className='colored-heading'>COMPANY</h3>
-            <span className='underlined-opts'>About Us</span>
-            <span className='underlined-opts'>রিটার্ন পলিসি</span> 
-            <span className='underlined-opts'>রিফান্ড পলিসি</span>
+            <div className="footer-first-right-one-header">
+              <h3 className='colored-heading'>COMPANY</h3>
+              <img src="/src/assets/GhorerBazar_assets/up-arrow-outbox-svgrepo-com.png" alt="" />
+            </div>
+              <span className='underlined-opts'>About Us</span>
+              <span className='underlined-opts'>রিটার্ন পলিসি</span> 
+              <span className='underlined-opts'>রিফান্ড পলিসি</span>
           </div>
           <div className="footer-first-right-two">
-            <h3 className='colored-heading'>QUICK HELP</h3>
-            <span className='underlined-opts'>গ্রাহক সেবা</span>
-            <span className='underlined-opts'>Contact</span>
+            <div className="footer-first-right-two-header">
+              <h3 className='colored-heading'>QUICK HELP</h3>
+              <img src="/src/assets/GhorerBazar_assets/up-arrow-outbox-svgrepo-com.png" alt="" />
+            </div>
+              <span className='underlined-opts'>গ্রাহক সেবা</span>
+              <span className='underlined-opts'>Contact</span>
           </div>
           <h3>DBID ID : 437361334</h3>
         </div>
+      </div>
+
+      <div className="footer-last">
+        <FontAwesomeIcon icon={faFacebook} />
+        <p>© ঘরের বাজার 2024</p>
       </div>
     </div>
   )

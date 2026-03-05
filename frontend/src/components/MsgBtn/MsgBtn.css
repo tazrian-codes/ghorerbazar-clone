@@ -1,0 +1,36 @@
+.main-div{
+  position: relative;
+}
+
+.msg-btn-div{
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  z-index: 130;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.msg-btn-div img{
+  width: 100px;
+}
+
+.bubble{
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 550px) {
+  .msg-btn-div img{
+    width: 55px;
+  }
+
+  .bubble{
+    font-size: 20px;
+  }
+}
