@@ -1,0 +1,117 @@
+.login-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login-page-contents{
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 40px 30px;
+  min-width: 50vw;
+}
+
+.login-page-contents .logo{
+  width: 120px;
+  margin: 0 auto 20px;
+}
+
+.login-page-contents .sign-in{
+  font-weight: 500;
+}
+
+.login-page-contents .sign-in-p{
+  color: rgb(79, 79, 79);
+  font-size: 13px;
+}
+
+.login-page-contents button img{
+  width: 60px;
+}
+
+.login-page-contents button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(72, 18, 251);
+  color: white;
+  margin: 20px auto;
+  padding: 5px 0;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.login-page-contents .or-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+
+.or-div p{
+  color: #bcbcbc;
+  font-weight: 300;
+}
+
+.or-div .line-div{
+  height: 0.5px;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+
+.login-page-contents form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.login-page-contents form input{
+  padding: 10px 10px;
+  border-radius: 7px;
+  border: 1px solid #e1e1e1;
+  outline: none;
+}
+
+.login-page-contents form .type-btn{
+  border: none;
+  background-color: #fc8934;
+  color: white;
+  font-weight: 500;
+  transition: background 0.1s;
+  cursor: pointer;
+}
+
+.login-page-contents form .email-input:focus{
+  border-color: #fc8934;
+}
+
+.login-page-contents button:hover{
+  background-color: rgb(38, 0, 207);
+}
+
+.login-page-contents .type-btn:hover{
+  background-color: #d26d25;
+}
+
+.login-page .terms-of-service{
+  position: absolute;
+  bottom: 20px;
+  color: #fc8934;
+  cursor: pointer;
+}
+
+.login-page .terms-of-service:hover{
+  color: #d06a22;
+}

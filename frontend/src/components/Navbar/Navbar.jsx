@@ -72,7 +72,7 @@ const Navbar = () => {
               className="nav-icon nav-icon-mobile"
             />
             <div className="wrapper">
-              <FontAwesomeIcon icon={faUser} className="nav-icon nav-icon-pc" />
+              <Link to={'/sign_in'}><FontAwesomeIcon icon={faUser} className="nav-icon nav-icon-pc" /></Link>
               <p className="tool-tip tool-tip-acc">Account</p>
             </div>
             <div className="wrapper">
@@ -135,7 +135,7 @@ const Navbar = () => {
             </div>
             
             <div className="search-head-right">
-              <FontAwesomeIcon icon={faUser} />
+              <Link to={'/sign_in'}><FontAwesomeIcon icon={faUser} /></Link>
               <FontAwesomeIcon icon={faCartShopping} />
             </div>
           </div>
