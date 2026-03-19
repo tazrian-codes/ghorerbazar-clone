@@ -20,7 +20,8 @@ export const food_list = [
         image: sundarban_honey,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Honey'
+        category: 'Honey',
+        stock: 100
   },
   {
         _id: "2",
@@ -28,7 +29,8 @@ export const food_list = [
         image: lichu_modhu,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Honey'
+        category: 'Honey',
+        stock: 100
   },
   {
         _id: "3",
@@ -36,7 +38,8 @@ export const food_list = [
         image: African_honey,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Honey'
+        category: 'Honey',
+        stock: 100
   },
   {
         _id: "4",
@@ -44,7 +47,8 @@ export const food_list = [
         image: Ajwa_dates,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Dates'
+        category: 'Dates-(খেজুর)',
+        stock: 100
   },
   {
         _id: "5",
@@ -52,7 +56,8 @@ export const food_list = [
         image: kalmi,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Dates'
+        category: 'Dates-(খেজুর)',
+        stock: 100
   },
   {
         _id: "6",
@@ -60,7 +65,8 @@ export const food_list = [
         image: medjul,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Dates'
+        category: 'Dates-(খেজুর)',
+        stock: 100
   },
   {
         _id: "7",
@@ -68,7 +74,8 @@ export const food_list = [
         image: masala,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Masala'
+        category: 'Masala',
+        stock: 100
   },
   {
         _id: "8",
@@ -76,7 +83,8 @@ export const food_list = [
         image: Deshi_mustard,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Oil'
+        category: 'Organi Oil',
+        stock: 100
   },
   {
         _id: "9",
@@ -84,7 +92,8 @@ export const food_list = [
         image: kalojira,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Oil'
+        category: 'Organic Oil',
+        stock: 100
   },
   {
         _id: "10",
@@ -92,7 +101,8 @@ export const food_list = [
         image: Amchur,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Pickle'
+        category: 'Pickle',
+        stock: 100
   },
   {
         _id: "11",
@@ -100,7 +110,8 @@ export const food_list = [
         image: Achar,
         price: 12,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-        category: 'Pickle'
+        category: 'Pickle',
+        stock: 100
   },
 ]
 

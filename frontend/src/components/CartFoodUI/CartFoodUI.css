@@ -1,0 +1,58 @@
+
+
+.cart-food-div{
+  display: flex;
+  margin: 10px 0;
+}
+
+.cart-food-ui .cart-food-div .food-img img{
+  width: 110px;
+  border: 1px solid silver;
+}
+
+.food-des{
+  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.food-des p{
+  font-size: 17px;
+}
+
+.item-count-remove{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-count-remove .span-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+  font-size: 15px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: rgb(226, 226, 226);
+}
+
+.span-div .remove, .add{
+  cursor: pointer;
+  user-select: none;
+}
+
+.span-div .quantity{
+  outline: none;
+}
+
+.span-div span{
+  width: 30px;
+  text-align: center;
+}
+
+.remove-div{
+  text-decoration: underline;
+  color: rgb(59, 59, 59);
+}

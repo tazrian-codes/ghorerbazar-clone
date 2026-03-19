@@ -1,0 +1,147 @@
+.cart-bg{
+  background-color: #0000004f;
+  inset: 0;
+  position: fixed;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 440px;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(100%);
+  transition: 0.5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-head{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.cart-main{
+  height: 100%;
+  position: relative;
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.cart-body{
+  flex: 1;
+  overflow-y: auto;
+}
+
+.product-added{
+  display: flex;
+  width: 280px;
+  gap: 5px;
+  padding: 3px;
+  margin: 10px 0;
+  align-items: center;
+  color: rgb(0, 105, 0);
+  background-color: rgba(142, 255, 142, 0.434);
+  font-size: 15px;
+}
+
+
+.cart-bg-open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart-bg-close{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart-open{
+  transform: translateX(0);
+}
+
+.cart-bottom{
+  width: 100%;
+  padding: 20px 20px;
+  background-color: whitesmoke;
+  box-shadow: 0 -2px 3px rgba(170, 170, 170, 0.3);
+}
+
+.cart-bottom-first-part{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-bottom-first-part hr{
+  margin: 0 20px;
+}
+
+.cart-bottom-first-part .note{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 50px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.cart-bottom-first-part .coupon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px 0 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.subtotal{
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+.payment{
+  margin: 20px 0;
+  background-color: rgb(255, 208, 0);
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.cod{
+  margin: 20px 0;
+  background-color: rgb(255, 153, 0);
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.view-cart{
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.shake-div{
+  animation: shake 0.4s ease;
+}

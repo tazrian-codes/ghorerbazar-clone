@@ -14,9 +14,15 @@
   align-items: start;
   flex-direction: column;
   padding: 40px 30px;
-  min-width: 50vw;
+  min-width: 400px;
 }
 
+@media (max-width: 550px) {
+  .login-page-contents{
+    min-width: 300px;
+}
+
+}
 .login-page-contents .logo{
   width: 120px;
   margin: 0 auto 20px;
